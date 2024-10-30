@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+  </head>
+  
+<body>
+   
+   <div id="BODY"   >
+
+
+   <div id="contener">
+
+    <h1 >JUST FUN BRO</h1>
+
+    <div id="inputcontener">
+    <input type="text" id="inputBox" placeholder="Enter text here">
+    <input type="text" id="inputBoxtwo" placeholder=" Another Enter text here">
+    </div>
+
+   <div id="BUTTONCONTENER"></div>
+    <button onclick="speakInput()"  class="button">Speak 1</button>
+
+    <!--<button onclick="speakInput2()">Speak 2</button>
+       -->
+
+    <button onclick="speakInput()+speakInput2()"  class="button">Speak (1+2)</button>
+
+    <button onclick="fuck()"  id="fuck">F**K</button>
+   </div>
+</div>
+
+</div>
+<footer>
+    <P id="dis"> disclamer: don't use in RAGGING purpose //it is only for FUN </P>
+   <h3>#include (only boys)</h3>
+</footer>
+</div>
+
+</body>
+      
+
+
+
+<script>
+    function speakInput() {
+        var input = document.getElementById("inputBox").value;
+        var utterance = new SpeechSynthesisUtterance(input);
+        window.speechSynthesis.speak(utterance);
+    }
+    function speakInput2() {
+        var input2 = document.getElementById("inputBoxtwo").value;
+        var utterance2 = new SpeechSynthesisUtterance(input2);
+        window.speechSynthesis.speak(utterance2);
+    }
+    function fuck(){
+        var input= document.getElementById("inputBox").value;
+        var utterance = new SpeechSynthesisUtterance(input+`fuck you`);
+        window.speechSynthesis.speak(utterance);
+    }
+    
+
+</script>
+
+
+///////////////////////////////////////////////////////////
+
+<style>
+    
+
+    *{ margin: 5px;
+        background-color:  #abfbfb;
+    }
+
+        
+    }
+      .button{
+                  height: 4%;
+               background-color: blue;
+               border-radius: 5px;
+      }
+     
+     #contener{
+                height:90%;
+                width: 70%;
+            
+     }
+
+
+  
+         
+     #dis{    color: red;
+            
+         }  
+
+    #fuck{
+            background-color: red;
+            
+    }
+
+    
+</style>
+//////////////////////////////////////////////////////////
+
+
+
+
+
+
+</html>

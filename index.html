@@ -14,35 +14,37 @@
 
 
    <div id="contener">
-   <h2 >卄ᥲρρ*y ᗪɪωᥲℓɪ*✨</h2>
+
     <h1 >🪔happy diwali buddy🪔 </h1>
-       <h1 id="greeting"></h1>
+    <h2 text-aling: center;>卄ᥲρρ*y ᗪɪωᥲℓɪ*✨</h2>
+    <h1 id="greeting"></h1>
     <input type="text" id="nameInput" placeholder="Enter your name">
-    <button onclick="displayGreeting()">🪔Greet🪔 </button>
+    <button onclick="displayGreeting()">🪔greer🪔</button>
+
 
 
     <div id="inputcontener">
-    <input type="text" id="inputBox" placeholder=" Enter your name here">
+    <input type="text" id="inputBox" placeholder="Enter text here">
     <input type="text" id="inputBoxtwo" placeholder=" Another Enter text here">
     </div>
 
    <div id="BUTTONCONTENER"></div>
-    <button onclick="speakInput()" id="speak1" class="button">Speak 1</button>
+    <button onclick="speakInput()" id="speak1"  class="button">Speak 1</button>
 
     <!--<button onclick="speakInput2()">Speak 2</button>
        -->
 
-    <button onclick="speakInput()+speakInput2()" id="speak2"  class="button">Speak (1+2)</button>
+    <button onclick="speakInput()+speakInput2()" id="speak2" class="button">Speak (1+2)</button>
 
     <button onclick="fuck()"  id="fuck">F**K</button>
-        <button onclick="diwali()+displayGreeting() "  id="diwali">🪔Diwali🪔</button>
+     <button onclick="diwali()+displayGreeting() "  id="diwali">🪔Diwali🪔</button>
    </div>
 </div>
 
 </div>
 <footer>
-    <P id="dis"> disclamer: don't mind //it's only for FUN </P>
-   
+    <P id="dis"> disclamer:  don't mind //it's only for FUN </P>
+
 </footer>
 </div>
 
@@ -67,15 +69,22 @@
         var utterance = new SpeechSynthesisUtterance(input+`fuck you`);
         window.speechSynthesis.speak(utterance);
     }
-    
-    function displayGreeting() {
-            var name = document.getElementById('nameInput').value;
-            document.getElementById('greeting').innerText =`HAPPY DIBALI`+ name;
-        }
-    function greet(){var input= document.getElementById("inputBox").value;
+     function diwali(){var input= document.getElementById("inputBox").value;
+        var utterance = new SpeechSynthesisUtterance(input+`happy diwali buddy`);
+        window.speechSynthesis.speak(utterance);
+          
+     }
+     function greet(){var input= document.getElementById("inputBox").value;
                       console.log(varinput);
                       heading= document.querySelector('#greet');
-                      heading.innertext= 'happy dibaly'+`🪔`+ name+`🪔`;
+                      heading.innertext= input +'happy dibaly';
+           
+     }
+    
+     function displayGreeting() {
+            var name = document.getElementById('nameInput').value;
+            document.getElementById('greeting').innerText = 'HAPPY DIWALI' +`🪔` + name + '🪔';
+        }
 
 </script>
 
@@ -104,6 +113,14 @@
      }
 
 
+       #speak1{
+             background-color: blue;
+             border-radius: 8px;
+       }
+       #speak2{
+             background-color: blue;
+             border-radius: 8px;
+       }
   
          
      #dis{    color: red;
@@ -112,16 +129,10 @@
 
     #fuck{
             background-color: red;
+            border-radius: 8px;
             
     }
-     #speak1{
-             background-color: blue;
-             border-radius: 8px;
-       }
-       #speak2{
-             background-color: blue;
-             border-radius: 8px;
-       }
+
     
 </style>
 //////////////////////////////////////////////////////////

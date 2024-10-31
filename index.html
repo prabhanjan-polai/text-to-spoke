@@ -14,11 +14,15 @@
 
 
    <div id="contener">
-
+   <h2 >卄ᥲρρ*y ᗪɪωᥲℓɪ*✨</h2>
     <h1 >🪔happy diwali buddy🪔 </h1>
+       <h1 id="greeting"></h1>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="displayGreeting()">🪔Greet🪔 </button>
+
 
     <div id="inputcontener">
-    <input type="text" id="inputBox" placeholder="Enter text here">
+    <input type="text" id="inputBox" placeholder=" Enter your name here">
     <input type="text" id="inputBoxtwo" placeholder=" Another Enter text here">
     </div>
 
@@ -31,13 +35,14 @@
     <button onclick="speakInput()+speakInput2()" id="speak2"  class="button">Speak (1+2)</button>
 
     <button onclick="fuck()"  id="fuck">F**K</button>
+        <button onclick="diwali()+displayGreeting() "  id="diwali">🪔Diwali🪔</button>
    </div>
 </div>
 
 </div>
 <footer>
-    <P id="dis"> disclamer: don't use in RAGGING purpose //it is only for FUN </P>
-   <h3>#include (only boys)</h3>
+    <P id="dis"> disclamer: don't mind //it's only for FUN </P>
+   
 </footer>
 </div>
 
@@ -63,6 +68,14 @@
         window.speechSynthesis.speak(utterance);
     }
     
+    function displayGreeting() {
+            var name = document.getElementById('nameInput').value;
+            document.getElementById('greeting').innerText =`HAPPY DIBALI`+ name;
+        }
+    function greet(){var input= document.getElementById("inputBox").value;
+                      console.log(varinput);
+                      heading= document.querySelector('#greet');
+                      heading.innertext= 'happy dibaly'+`🪔`+ name+`🪔`;
 
 </script>
 

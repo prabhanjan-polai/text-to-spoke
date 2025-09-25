@@ -2,7 +2,7 @@
 
 Celebrate Diwali with a playful and interactive greeting experience! This web app lets users enter custom messages, hear them spoken aloud, and send festive wishes with a personalized touch.
 
-# for quick trail 
+# for quick trail {https://prabhanjan-polai.github.io/text-to-spoke/}
 
 ## ✨ Features
 
